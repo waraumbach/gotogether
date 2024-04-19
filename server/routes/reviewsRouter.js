@@ -41,11 +41,11 @@ reviewsRouter.post('/reviews', async (req, res) => {
 
 
 reviewsRouter.delete('/reviews/:reviewID', async (req, res) => {
-    console.log(req.params.reviewID)
+    const { reviewID } = req.params
     try {
-        //const deletedReview = await Review.deleteOne({_id : req.params.reviewID})
+        const deletedReview = await Review.deleteOne({_id : reviewID})
 
-        //return res.json('Review deleted')
+        return res.json('Review deleted')
     }
     catch (err) {
         res.json(err)
