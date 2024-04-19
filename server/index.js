@@ -2,7 +2,13 @@ import express from 'express'
 import countriesData from "./data/countriesData.js";
 import cors from "cors";
 import mongoose from 'mongoose'
-const URI ='mongodb+srv://Wara:KlLfg73LvsoaRfvS@cluster0.gobenur.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+import 'dotenv/config'
+//import searchsRouter from './routes/searchsRouter.js';
+//import searchsRouter from './routes/searchsRouter.js';
+//import reviewsRouter from './routes/reviewsRouter.js';
+//import searchsRouter from './routes/searchsRouter.js';
+
+
 const app=express()
 // 1.access to localhost (httplocalhost) &postman 
 // GET : read the data
@@ -13,9 +19,11 @@ const app=express()
 app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({extended : false}))
+//app.use('/api',reviewRouter,searchsRouter)
 
 
-mongoose.connect(URI)
+
+mongoose.connect(process.env.MONGO_URI)
 
 
 app.get('/', (request,response)=>{

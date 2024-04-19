@@ -2,6 +2,8 @@
 
 import { Router } from 'express'
 import Review from '../models/reviewModel.js'
+
+
 const reviewsRouter = Router()
 
 
@@ -38,12 +40,12 @@ reviewsRouter.post('/reviews', async (req, res) => {
 })
 
 
-reviewsRouter.delete('/reviews/deletereview/:reviewID', async (req, res) => {
-    const { reviewID } = req.params
+reviewsRouter.delete('/reviews/:reviewID', async (req, res) => {
+    console.log(req.params.reviewID)
     try {
-        const deletedReview = await Review.deleteOne({_id : reviewID})
+        //const deletedReview = await Review.deleteOne({_id : req.params.reviewID})
 
-        return res.json('Review deleted')
+        //return res.json('Review deleted')
     }
     catch (err) {
         res.json(err)
