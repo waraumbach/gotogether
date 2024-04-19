@@ -2,11 +2,12 @@ import { Search } from "@mui/icons-material";
 import mongoose, { Schema } from "mongoose";
 
 const searchSchema = new mongoose.Schema({
-  title: String,
-  gener: String,
-  year: Number,
+  id: Number,
+  name: String,
+  region: String,
+  reviews:String,
 });
 
-const Movie = mongoose.model("Search", movieSchema);
+const Search = mongoose.model("Search", searchSchema);
 
 export default Search;
