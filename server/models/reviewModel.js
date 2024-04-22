@@ -8,6 +8,7 @@ const reviewSchema = new Schema({
   name: String,
   region: String,
   reviews:String,
+  image:String,
     
 })
 
