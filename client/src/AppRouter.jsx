@@ -8,6 +8,7 @@ import Home from './components/Home.jsx'
 import Users from './components/Users.jsx'
 import NavBar from './components/NavBar.jsx'
 import Weather from './components/Weather.jsx'
+import Header from './components/Header.jsx'
 
 import User from './components/User.jsx'
 
@@ -15,6 +16,7 @@ function AppRouter() {
 
   return (
     <>
+        <Header />
         <NavBar />
         <Routes>
           <Route path='/contact' element={<Contact />} />
