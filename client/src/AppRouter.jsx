@@ -5,12 +5,12 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Contact from './components/Contact.jsx'
 import Home from './components/Home.jsx'
-import Users from './components/Users.jsx'
+import Users from './components/Users/Users.jsx'
 import NavBar from './components/NavBar.jsx'
 import Weather from './components/Weather.jsx'
 import Header from './components/Header.jsx'
 
-import User from './components/User.jsx'
+import User from './components/Users/User.jsx'
 
 function AppRouter() {
 
