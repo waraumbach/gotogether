@@ -17,10 +17,11 @@ const app=express()
 // Delete : delete the data
 // Those verbs or actions create what we all a CRUD : create/read/update/delete the data
 app.use(cors());
+app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({extended : false}))
 //app.use('/api',reviewRouter,searchsRouter)
-app.use(express.Router)
+//app.use(express.Router)
 
 
 
