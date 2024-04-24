@@ -1,7 +1,9 @@
+import Searchs from './Search/Searchs.jsx'
 const Home = () => {
     return(
         <>
-            <h2>Welcome home</h2>
+        <Searchs />
+            
            
         </>
     )
