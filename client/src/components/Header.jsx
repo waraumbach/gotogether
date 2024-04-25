@@ -3,7 +3,7 @@
 const Header=()=> {
   return (
     <>
-      <header className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-[300px] flex justify-content items-center">
+      <header className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-[300px] flex justify-center items-center">
        <div className="text-center">
         <h1 className="text-white text-5xl">go together </h1>
         <p className="text-white text-2xl mx-8 justify-content items-center;">find your favourite location in Asia</p>

@@ -4,42 +4,42 @@ const countriesData = [
     name: "Japan",
     region: "Asia",
     reviews: ["4 good service"],
-    image: "/japan.jpg",
+    image: "/images/japan.jpg",
   },
   {
     id: 2,
     name: "Thailand",
     region: "Asia",
     reviews: ["4 good service"],
-    image: "/bangkok.jpg"
+    image: "/images/bangkok.jpg"
   },
   {
     id: 3,
     name: "South Korea",
     region: "Middle East",
     reviews: ["4 good service"],
-    image: "/korea.jpg"
+    image: "/images/korea.jpg"
   },
   {
     id: 4,
     name: "Malaysia",
     region: "Asia",
     reviews: ["4 good service"],
-    image: "/malaysia.jpg"
+    image: "/images/malaysia.jpg"
   },
   {
     id: 5,
     name: "Singapore",
     region: "Asia",
     reviews: ["4 good service"],
-    image: "/singapore.jpg"
+    image: "/images/singapore.jpg"
   },
   {
     id: 6,
     name: "China",
     region: "Asia",
     reviews: ["4 good service"],
-    image: "/china.jpg"
+    image: "/images/china.jpg"
   },
 ];
 export default countriesData;

@@ -10,6 +10,7 @@ import User from './components/Users/User.jsx'
 import NavBar from './components/NavBar.jsx'
 import Weather from './components/Weather.jsx'
 import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 
 
 
@@ -22,6 +23,7 @@ function AppRouter() {
     <>
         <Header />
         <NavBar />
+        
         <Routes>
        
           <Route path='/contact' element={<Contact />} />
@@ -31,6 +33,9 @@ function AppRouter() {
           <Route path='/weather' element={<Weather />} />
          
         </Routes>
+
+
+        <Footer/>
     </>
   )
 }

@@ -22,7 +22,14 @@ authRouter.post('/register', async (req, res) => {
             name: req.body.name,
             email: req.body.email,
             age: req.body.age,
-            password: hashedPassword
+            gender:req.body.gender,
+            password: hashedPassword,
+            //if the user is not providing an image(the image being the req.file)we will assign a default image, the path to this image is : '/bangkok.jpg'
+            //image: req.file ? '/public/images' + req.file.fieldname: '/bangkok.jpg'
+            image :req.file ? '/public/images/' + req.file.filename
+                   :req.body.gender==='male' ? '/images/profile-male.png'
+                   :req.body.gender==='woman'?'/images/profile-woman.png'
+                   :'/images/profile.png'
         })
 
         newUser.save()

@@ -22,7 +22,7 @@ const CountryCard = ({maps, name, flags, capital}) => {
                 </CardBody>
                 <img
                     alt="Card cap"
-                    src={flags.png}
+                    src={images.png}
                     width="100%"
                 />
                 <CardBody>
