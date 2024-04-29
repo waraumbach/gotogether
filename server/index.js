@@ -3,11 +3,11 @@ import countriesData from "./data/countriesData.js";
 import cors from "cors";
 import mongoose from 'mongoose'
 import 'dotenv/config'
-import authRouter from './routes/authRouter.js';
-import usersRouter from './routes/usersRouter.js'
+//import authRouter from './routes/authRouter.js';
+//import usersRouter from './routes/usersRouter.js'
 import multer from 'multer';
 import User from './models/userModel.js';
-import path from 'path'
+//import path from 'path'
 
 
 
@@ -80,4 +80,4 @@ app.get("/countries/name/:name", (req, res) => {
 });
 
 
-app.listen(3000, () => console.log(`Server running on port 3000`))
+app.listen(8000, () => console.log(`Server running on port 8000`))
