@@ -12,7 +12,7 @@ const Reviews = () => {
 
     const fetchReviews = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/api/reviews')
+            const response = await axios.get('http://localhost:3000/api/reviews')
             setReviews(response.data)
 
         }
